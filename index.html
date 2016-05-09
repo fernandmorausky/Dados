@@ -19,18 +19,29 @@
         face5.src="img/dado6.png"
     </script>
  
- 
-    <img src="" name="mydice">
+ 	<!-- Primera persona -->
+ 	<form>
+    <input type="button" value="Lanza dado" name="dado1" onClick="lanzar('index1')">
+    </form>
+ 	<img src="img/dado1.png" name="index1">
+ 	<br><br><br><hr><br><br>
+    
+
+
+
+    <!-- Segunda persona -->
+    <img src="img/dado1.png" name="index2">
  
     <form>
-    <input type="button" value="Lanza dado" onClick="lanzar()">
+    <input type="button" value="Lanza dado" name="dado2" onClick="lanzar('index2')">
     </form>
  
+    
     <script>
-    function lanzar()
+    function lanzar(index)
     {
         var randomdice=Math.round(Math.random()*5);
-        document.images["mydice"].src=eval("face"+randomdice+".src");
+        document.images[index].src=eval("face"+randomdice+".src");
     }
     </script>
  
