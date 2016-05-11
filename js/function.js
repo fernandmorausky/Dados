@@ -26,7 +26,7 @@ function JuegaTimba () {
 		//document.getElementById("suma").innerHTML =suma;
 
 	  //primer tiro de dados   
-		 switch ( suma )    {      
+		 switch ( suma )    {   //   
 		  	case 7:    
 		  	case 11:                     
 		  		estadoJuego = Status.GANA;  
