@@ -71,7 +71,9 @@ function JuegaTimba () {
   		}
 	};
 	    
-	    
+// $('.enter_link').click(function() { 
+//         $(this).parent().fadeOut(500);
+//  });
   		
 
 }
@@ -85,9 +87,11 @@ function tiraDados (argument) {
 	// aleatorio del dado2   
 	 sumaTrabajo = dado1 + dado2;
 	//alert("El jugador tiro :" + dado1 + " + " + dado2 + " = " + sumaTrabajo);   
-	document.images["index1"].src=eval("face" + dado1 + ".src");
-	document.images["index2"].src=eval("face" + dado2 + ".src");
+	//document.images["index1"].src=eval("face" + dado1 + ".src");
+	document.getElementById('cube1').className = 'show'+dado1;
 
+	//document.images["index2"].src=eval("face" + dado2 + ".src");
+	document.getElementById('cube2').className = 'show'+dado2;
 	document.getElementById("suma").innerHTML =sumaTrabajo;
 	//alert(dado1 + ' + ' + dado2  + ' = ' +sumaTrabajo) ;
 	
@@ -95,4 +99,19 @@ function tiraDados (argument) {
 // devuelve suma de los dados 
 }
    
-	
+
+
+/*******************************************/
+var face=1;
+
+var show = function() {
+  //$('#cube').attr('class', 'show'+face);
+  document.getElementById('cube1').className = 'show'+face;
+  if(face==6) {
+    face=1;
+  } else {
+    face++; 
+  }
+};
+
+//var timer=setInterval("show()", 300);

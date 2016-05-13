@@ -2,24 +2,21 @@
 <HTML>
 <HEAD>
 <script type="text/javascript" src="js/function.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/css.css">
 </HEAD>
  
-<BODY>
-    <script>
-        var face0=new Image()
-        face0.src="img/dado1.png"
-        var face1=new Image()
-        face1.src="img/dado2.png"
-        var face2=new Image()
-        face2.src="img/dado3.png"
-        var face3=new Image()
-        face3.src="img/dado4.png"
-        var face4=new Image()
-        face4.src="img/dado5.png"
-        var face5=new Image()
-        face5.src="img/dado6.png"
-    </script>
-  
+<BODY> 
+
+
+<!--  <div id="splashscreen">
+ 
+    <img src="img/welcome.png" width='250' height='250'/>
+
+</div> -->
+
+    <label>Suma</label>
+    <label id="punto">0</label><br><br>
+
     <label>Suma</label>
     <label id="suma">0</label><br><br>
 
@@ -29,14 +26,39 @@
     <form>
     <input type="button" value="Lanza dado" onClick="JuegaTimba()">
     </form>
+    <!--
     <img src="img/dado1.png" name="index1">
 
     <br>
-
-
     <img src="img/dado1.png" name="index2">
  
-     
+     <br><br> -->
+  <!--   <input type="button" value ="Tirar" onclick="show()" >
+
+ -->
+    <div id="container1">
+      <div id="cube1" class="show1">
+        <div class="top"></div>
+        <div class="front"></div>
+        <div class="left"></div>
+        <div class="back"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+      </div>
+    <div>
+        
+    <div id="container2">
+      
+      <div id="cube2" class="show1">
+        <div class="top"></div>
+        <div class="front"></div>
+        <div class="left"></div>
+        <div class="back"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+      </div>
+    <div>
+  
  
 
     
